@@ -31,8 +31,8 @@ export const Main = () => {
     return (
         <div className="main">
             <div className="main__messages">
-                {messages.map(({text, isCurrentUser}, i) => (
-                    <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
+                {messages.map(({text, isCurrentUser}, index) => (
+                    <Message key={index} text={text} isCurrentUser={isCurrentUser}/>
                 ))}
             </div>
             <div className="main__plate">
